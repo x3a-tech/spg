@@ -44,7 +44,7 @@ func NewClient(ctx context.Context, cfg *configo.Database) (*pgxpool.Pool, error
 }
 
 func Dsn(cfg *configo.Database) string {
-	return fmt.Sprintf("postgres://%s:%s@%s:%d/%s", cfg.User, cfg.Password, cfg.Host, cfg.Port, cfg.Name)
+	return fmt.Sprintf("postgres://%s:%s@%s:%d/%s?currentSchema=%s", cfg.User, cfg.Password, cfg.Host, cfg.Port, cfg.Name, cfg.Schema)
 }
 
 func try(fn func() error, attempts int, delay time.Duration) (err error) {

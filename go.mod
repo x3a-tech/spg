@@ -1,11 +1,11 @@
 module github.com/x3a-tech/spg
 
-go 1.23.2
+go 1.24.1
 
 require (
 	github.com/golang-migrate/migrate/v4 v4.18.2
-	github.com/jackc/pgx/v5 v5.7.2
-	github.com/x3a-tech/configo v1.0.0
+	github.com/jackc/pgx/v5 v5.7.4
+	github.com/x3a-tech/configo v1.1.6
 )
 
 require (
