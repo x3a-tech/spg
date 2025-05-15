@@ -55,7 +55,7 @@ func createMigrationFiles(dir, name string) {
 	}
 
 	// Получение текущего времени для префикса
-	now := time.Now().Format("2006-01-02-15-04-05")
+	now := time.Now().Format("20060102150405")
 
 	// Имена файлов миграций
 	upFileName := fmt.Sprintf("%s_%s.up.sql", now, name)
